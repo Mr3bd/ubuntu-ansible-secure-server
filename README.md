@@ -24,7 +24,7 @@ It is designed so that:
   - A local VM  
   - A cloud VM  
   - A physical machine  
-- **Vagrant is optional** — used only if you do not have a server to test on.
+- **Vagrant is optional** - used only if you do not have a server to test on.
 
 ---
 
@@ -132,7 +132,7 @@ vagrant up
 
 ---
 
-## 🔑 Important — First SSH Connection Must Be Manual!
+## 🔑 First SSH Connection Must Be Manual
 
 When connecting to any new server, SSH creates a fingerprint entry in:
 
