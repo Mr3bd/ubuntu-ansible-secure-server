@@ -1,0 +1,7 @@
+---
+- name: Ubuntu 22.04 Server Hardening
+  hosts: ubuntu_servers
+  become: yes
+
+  roles:
+    - hardening

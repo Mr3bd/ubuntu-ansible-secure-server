@@ -1,0 +1,21 @@
+---
+# Basic firewall to allow essential traffic only.
+
+- name: Install UFW firewall
+  apt:
+    name: ufw
+    state: present
+
+- name: Allow SSH
+  ufw:
+    rule: allow
+    port: 22
+
+- name: Deny everything else by default
+  ufw:
+    default: deny
+    direction: incoming
+
+- name: Enable firewall
+  ufw:
+    state: enabled

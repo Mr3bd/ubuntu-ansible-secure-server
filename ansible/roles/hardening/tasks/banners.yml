@@ -1,0 +1,13 @@
+---
+# Login banner to show a warning message on SSH login.
+
+- name: Apply login banner
+  template:
+    src: issue.net.j2
+    dest: /etc/issue.net
+
+- name: Enable banner in SSH config
+  lineinfile:
+    path: /etc/ssh/sshd_config
+    regexp: '^Banner'
+    line: "Banner /etc/issue.net"

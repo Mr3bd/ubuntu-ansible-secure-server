@@ -1,0 +1,19 @@
+---
+# This section focuses on user/password rules.
+
+- name: Install password quality package
+  apt:
+    name: libpam-pwquality
+    state: present
+
+- name: Set password policies
+  lineinfile:
+    path: /etc/security/pwquality.conf
+    regexp: '^{{ item.key }}'
+    line: "{{ item.key }} = {{ item.value }}"
+  loop:
+    - { key: "minlen", value: "12" }
+    - { key: "dcredit", value: "-1" }
+    - { key: "ucredit", value: "-1" }
+    - { key: "ocredit", value: "-1" }
+    - { key: "lcredit", value: "-1" }
