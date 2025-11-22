@@ -186,7 +186,7 @@ Example for your own server:
 prod ansible_host=YOUR_SERVER_IP ansible_user=ubuntu ansible_private_key_file=~/.ssh/id_rsa
 ```
 
-**Note:** "prod" is simply a label used as the host name inside Ansible. It does not affect or change anything on the actual server.
+Note: "prod" is simply a label used as the host name inside Ansible. It does not affect or change anything on the actual server.
 ---
 
 ## ▶️ Run the Hardening Playbook
