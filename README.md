@@ -280,10 +280,21 @@ A complete Ubuntu 22.04 server hardening automation using Ansible, with optional
 
 ---
 
+## 🌟 Star this repo if you found it useful!
+
+Made with 💻 by a **Cloud Security Engineer**, built for **Cloud Security**, **Cyber Security Engineers** and **DevOps**.
+
+---
+
 ## 👨‍💻 Author
 
-**Abdullrahman Wasfi**  
-LinkedIn: https://www.linkedin.com/in/mr3bd  
-Website: https://mr3bd.com  
+[Abdullrahman Alhawamdeh](https://www.linkedin.com/in/mr3bd)
 
-Made with passion for **Cloud Security, DevOps, and Automation**.
+---
+
+## 🌍 Website
+
+https://mr3bd.com
+
+Made with ❤️ using **Ubunut, Ansible, and Vagrant**.
+
